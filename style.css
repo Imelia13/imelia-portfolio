@@ -199,6 +199,48 @@ footer strong span {
     display: none;
 }
 
+/* =========================================================
+   ICONS
+========================================================= */
+
+.btn,
+.project-link,
+.social-links a,
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn svg,
+.project-link svg,
+.social-links svg,
+.contact-item svg {
+    width: 17px;
+    height: 17px;
+    stroke-width: 1.8;
+}
+
+.btn {
+    gap: 8px;
+}
+
+.project-link {
+    gap: 6px;
+}
+
+.social-links a {
+    gap: 7px;
+}
+
+.theme-btn svg {
+    width: 19px;
+    height: 19px;
+}
+
+.menu-btn svg {
+    width: 22px;
+    height: 22px;
+}
 
 /* =========================================================
    HERO
@@ -1215,8 +1257,13 @@ footer strong span {
     border: 1px solid var(--border);
     border-radius: 10px;
 
-    font-size: 0.75rem;
-    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.contact-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.8;
 }
 
 .contact-item div {
