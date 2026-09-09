@@ -269,16 +269,11 @@ footer strong span {
     right: -200px;
 
     background:
-       radial-gradient(
-           circle at 30% 30%,
-           rgba(0, 112, 243, 0.20),
-           transparent 50%
-       ),
-       radial-gradient(
-           circle at 70% 70%,
-           rgba(121, 40, 202, 0.14),
-           transparent 50%
-       );
+        radial-gradient(
+            circle,
+            rgba(139, 92, 246, 0.16),
+            transparent 65%
+        );
 
     pointer-events: none;
 }
