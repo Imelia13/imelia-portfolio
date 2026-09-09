@@ -143,7 +143,7 @@ revealElements.forEach(element => {
 const year = new Date().getFullYear();
 const copyright = document.getElementById("copyright");
 
-if (footerText) {
-    footerText.textContent =
+if (copyright) {
+    copyright.textContent =
         `© ${year} Imelia Destriani. All rights reserved.`;
 }
