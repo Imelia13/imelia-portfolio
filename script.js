@@ -140,11 +140,8 @@ revealElements.forEach(element => {
 // CURRENT YEAR
 // ============================
 
-const year =
-    new Date().getFullYear();
-
-const footerText =
-    document.querySelector("footer p:last-child");
+const year = new Date().getFullYear();
+const copyright = document.getElementById("copyright");
 
 if (footerText) {
     footerText.textContent =
