@@ -3,18 +3,26 @@
 ========================================================= */
 
 :root {
-    --bg: #f7f7f5;
+    --bg: #FAFAFA;
     --bg-secondary: #ffffff;
 
-    --text: #161616;
-    --text-secondary: #666666;
+    --text: #171717;
+    --text-secondary: #4D4D4D;
+    --text-muted: #888888;
 
-    --border: #ddddda;
+    --border: #EBEBEB;
 
-    --accent: #8b5cf6;
-    --accent-dark: #7044d4;
+    --accent: #0070F3;
+    --accent-dark: #0761D1;
 
-    --nav-bg: rgba(247, 247, 245, 0.85);
+    --blue: #0070F3;
+    --cyan: #50E3C2;
+    --violet: #7928CA;
+    --pink: #FF0080;
+    --coral: #FF4D4D;
+    --amber: #F9CB28;
+   
+    --nav-bg: rgba(250, 250, 250, 0.85);
 
     --shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
 
@@ -22,15 +30,16 @@
 }
 
 body.dark {
-    --bg: #101010;
-    --bg-secondary: #181818;
+    --bg: #000000;
+    --bg-secondary: #111111;
 
-    --text: #f5f5f5;
-    --text-secondary: #a4a4a4;
+    --text: #FAFAFA;
+    --text-secondary: #A3A3A3;
+    --text-muted: #737373;
 
-    --border: #292929;
+    --border: #262626;
 
-    --nav-bg: rgba(16, 16, 16, 0.85);
+    --nav-bg: rgba(0, 0, 0, 0.85);
 
     --shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
@@ -218,11 +227,16 @@ footer strong span {
     right: -200px;
 
     background:
-        radial-gradient(
-            circle,
-            rgba(139, 92, 246, 0.16),
-            transparent 65%
-        );
+       radial-gradient(
+           circle at 30% 30%,
+           rgba(0, 112, 243, 0.20),
+           transparent 50%
+       ),
+       radial-gradient(
+           circle at 70% 70%,
+           rgba(121, 40, 202, 0.14),
+           transparent 50%
+       );
 
     pointer-events: none;
 }
@@ -389,7 +403,7 @@ footer strong span {
 
     border-radius: 28px;
 
-    background: #ffffff;
+    background: var(--bg-secondary);
 
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
 
@@ -438,10 +452,10 @@ footer strong span {
 
     padding: 14px 20px;
 
-    background: #ffffff !important;
-    color: #111111 !important;
-
-    border: 1px solid #e5e5e5 !important;
+    background: var(--bg-secondary) !important;
+    color: var(--text) !important;
+   
+    border: 1px solid var(--border) !important;
     border-radius: 14px;
 
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
@@ -644,7 +658,7 @@ footer strong span {
 
     border-radius: 12px;
 
-    background: rgba(139, 92, 246, 0.1);
+    background: rgba(0, 112, 243, 0.08);
 
     color: var(--accent);
 
@@ -831,7 +845,7 @@ footer strong span {
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
 
-    background: #ffffff;
+    background: var(--bg-secondary);
 }
 
 .education-logo-wrapper {
@@ -945,10 +959,10 @@ footer strong span {
 .certificate-card {
     overflow: hidden;
 
-    border: 1px solid #e5e5e5;
+    border: 1px solid var(--border);
     border-radius: 20px;
 
-    background: #ffffff;
+    background: var(--bg-secondary);
 
     transition:
         transform 0.3s ease,
@@ -973,7 +987,7 @@ footer strong span {
 
     overflow: hidden;
 
-    background: #f4f4f4;
+    background: #F5F5F5;
 }
 
 .certificate-image.landscape {
@@ -1140,7 +1154,7 @@ footer strong span {
 ========================================================= */
 
 .contact {
-    background: #ffffff;
+   background: var(--bg-secondary);
 }
 
 .contact-grid {
@@ -1230,7 +1244,7 @@ footer {
 
     border-top: 1px solid var(--border);
 
-    background: #ffffff;
+    background: var(--bg-secondary);
 }
 
 .footer-container {
@@ -1341,7 +1355,7 @@ footer {
        left: 0;
        width: 100%;
        padding: 25px 20px;
-       background: #fff;
+       background: var(--bg-secondary);
        border-top: 1px solid var(--border);
        box-shadow: var(--shadow);
        z-index: 1000;
